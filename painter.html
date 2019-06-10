@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/painter.css">
     <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/canvas-content.css">
 </head>
 
 <body>
@@ -15,36 +16,14 @@
     <div class="container">
         <div class="row wrapper">
             <div class="col-md-10 h-100 canvas-frame">
-                <div class="canvas"></div>
+                <div id="canvas"></div>
             </div>
             <div class="col-md-2 h-100 tools">
-                <div class="row h-60 colors">
-                    <!-- <div class="color red"></div>
-                    <div class="color orange"></div>
-                    <div class="color yellow"></div>
-                    <div class="color green"></div>
-                    <div class="color blue"></div>
-                    <div class="color"></div>
-                    <div class="color"></div>
-                    <div class="color"></div>
-                    <div class="color"></div>
-                    <div class="color"></div> -->
-
-                    <button class="color red"></button>
-                    <button class="color orange"></button>
-                    <button class="color yellow"></button>
-                    <button class="color green"></button>
-                    <button class="color turqoise"></button>
-                    <button class="color blue"></button>
-                    <button class="color purple"></button>
-                    <button class="color pink"></button>
-                    <button class="color brown"></button>
-                    <button class="color black"></button>
-                    <button class="color grey"></button>
-                    <button class="color white"></button>
-                </div>
-                <div class="row h-40 brushes">
-
+                <div class="row h-60 colors"></div>
+                <div class="row h-30 brushes"></div>
+                <div class="row h-10 current-colors">
+                    <div class="color" id="fgcolor"></div>
+                    <div class="color" id="bgcolor"></div>
                 </div>
             </div>
         </div>
